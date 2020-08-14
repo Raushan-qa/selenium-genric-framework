@@ -8,7 +8,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
-import com.companyName.projectName.genericLib.DLWebElement;
 import com.companyName.projectName.genericLib.Driver;
 import com.companyName.projectName.genericLib.ExcelLib;
 import com.companyName.projectName.genericLib.LogUtils;
@@ -27,6 +26,7 @@ public class ModuleCommonUtils {
 	
 //	@Test(priority = 1)
 	public static void initializeCitizen() throws IOException, InterruptedException{	
-		Driver.launchApplication(excel.getData(0,5,2),excel.getData(0,5,3),excel.getData(0,5,4),excel.getData(0,5,5), excel.getData(0,2,8));	
+		Driver.launchApplication(excel.getData(0,5,2),excel.getData(0,5,3),excel.getData(0,5,4),excel.getData(0,5,5));
+		
 	}
 }

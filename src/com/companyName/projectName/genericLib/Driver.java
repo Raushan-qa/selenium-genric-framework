@@ -47,7 +47,7 @@ public class Driver {
     }
 	
 	
-	public static boolean launchApplication(String BrowserType, String URL, String userName, String passWord, String Captcha)
+	public static boolean launchApplication(String BrowserType, String URL, String userName, String passWord)
 	{
 		boolean flag = false;
 		try{
@@ -101,7 +101,7 @@ public class Driver {
 	
 	
 	public static void initializeApplication() throws IOException{	
-		Driver.launchApplication(excel.getData(0,5,2),excel.getData(0,5,3),excel.getData(0,5,4),excel.getData(0,5,5), excel.getData(0,2,8));
+		Driver.launchApplication(excel.getData(0,2,2),excel.getData(0,2,3),excel.getData(0,2,4),excel.getData(0,2,5));
 		}
 
 

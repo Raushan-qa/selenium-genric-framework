@@ -45,7 +45,7 @@ public class ExtendReportManager {
 	@BeforeSuite
 	public void setUp() {
 		htmlReporter = new ExtentHtmlReporter(
-				System.getProperty("user.dir") + "/test-output/DL-TestAutomationReport.html");
+				System.getProperty("user.dir") + "/test-output/TestAutomationReport.html");
 		extent = new ExtentReports();
 		extent.attachReporter(htmlReporter);
 
@@ -56,8 +56,8 @@ public class ExtendReportManager {
 //		extent.setSystemInfo("Version", "1.0");
 
 		htmlReporter.config().setChartVisibilityOnOpen(true);
-		htmlReporter.config().setDocumentTitle("DL Test Automation Report");
-		htmlReporter.config().setReportName("Pre-Pod DL Application Functional Test Automation Report");
+		htmlReporter.config().setDocumentTitle("Test Automation Report");
+		htmlReporter.config().setReportName("Application Functional Test Automation Report");
 		htmlReporter.config().setTestViewChartLocation(ChartLocation.TOP);
 		htmlReporter.config().setTheme(Theme.STANDARD);
 	}

@@ -7,7 +7,7 @@ package com.companyName.projectName.genericLib;
  ** 		This class contains DL Web Elements
  */
 
-public final class DLWebElement {
+public final class WebPageElement {
 	
 		
 	/* @ Declaration about Login Screen Objects */

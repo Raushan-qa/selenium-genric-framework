@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
-import com.companyName.projectName.genericLib.DLWebElement;
+import com.companyName.projectName.genericLib.WebPageElement;
 import com.companyName.projectName.genericLib.Driver;
 import com.companyName.projectName.genericLib.LogUtils;
 import com.companyName.projectName.genericLib.WebDriverCommonLib;
@@ -27,7 +27,7 @@ public class Logout extends WebDriverCommonLib {
 		logger.info("going to logout from application!");
 		Thread.sleep(2000);
 		JavascriptExecutor js = (JavascriptExecutor)Driver.driver;
-		js.executeScript("arguments[0].click();", Driver.driver.findElement(By.xpath(DLWebElement.LOGOUT_BTN)));
+		js.executeScript("arguments[0].click();", Driver.driver.findElement(By.xpath(WebPageElement.LOGOUT_BTN)));
 		Thread.sleep(7000);
 	}
 	

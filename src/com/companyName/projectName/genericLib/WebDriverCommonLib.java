@@ -70,7 +70,6 @@ public class WebDriverCommonLib {
 	public static void select(WebElement selWb , String value){
 		Select sel = new Select(selWb);
 		sel.selectByVisibleText(value);
-		
 	}
 	
 	public static void select(WebElement selWb , int index){

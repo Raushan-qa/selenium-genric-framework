@@ -9,11 +9,10 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.testng.Assert;
 import org.testng.Reporter;
-
-import com.companyName.projectName.genericLib.DLWebElement;
 import com.companyName.projectName.genericLib.Driver;
 import com.companyName.projectName.genericLib.LogUtils;
 import com.companyName.projectName.genericLib.WebDriverCommonLib;
+import com.companyName.projectName.genericLib.WebPageElement;
 
 
 
@@ -42,14 +41,14 @@ public class Login extends WebDriverCommonLib {
 	private static  boolean setLoginCredentials(String UserName, String Password) throws InterruptedException
 	{
 		boolean flag = false;
-		if((Driver.driver.findElement(By.id(DLWebElement.LOGIN_USERNAME)).isDisplayed()) ==  true)
+		if((Driver.driver.findElement(By.id(WebPageElement.LOGIN_USERNAME)).isDisplayed()) ==  true)
 		{
-			Driver.driver.findElement(By.id(DLWebElement.LOGIN_USERNAME)).sendKeys(UserName);
+			Driver.driver.findElement(By.id(WebPageElement.LOGIN_USERNAME)).sendKeys(UserName);
 			logger.info("Entered Username.");
-			Driver.driver.findElement(By.id(DLWebElement.LOGIN_PASSWORD)).sendKeys(Password);
+			Driver.driver.findElement(By.id(WebPageElement.LOGIN_PASSWORD)).sendKeys(Password);
 			logger.info("Entered Password.");
 			Thread.sleep(13000);
-			Driver.driver.findElement(By.xpath(DLWebElement.LOGIN_BTN)).click();
+			Driver.driver.findElement(By.xpath(WebPageElement.LOGIN_BTN)).click();
 			logger.info("Clicked on login button.");
 			flag = true;
 		}
